@@ -1,0 +1,8 @@
+services:
+  go:
+    image: golang:latest
+    environment:
+      - FILE=placeholder
+    command: bash -c "go run $${FILE}"
+    volumes:
+      - .:/go
