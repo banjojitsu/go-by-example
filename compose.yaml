@@ -2,7 +2,7 @@ services:
   go:
     image: golang:latest
     environment:
-      - FILE=placeholder
+      - "FILE=${FILE}"
     command: bash -c "go run $${FILE}"
     volumes:
       - .:/go
